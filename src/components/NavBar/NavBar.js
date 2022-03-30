@@ -1,16 +1,20 @@
-import './NavBar.css'
+import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
     return(
         <nav className="NavBar">
-            <img></img>
-            <button className="boton">Inicio</button>
-            <ul className="NavBarList">
-                <li><a className="NavBarList" href="#">Remeras</a></li>
-                <li><a className="NavBarList" href="#">Buzos</a></li>
-                <li><a className="NavBarList" href="#">Camisas</a></li>
-            </ul>
-            <button className="boton">Login</button>
+            <div>
+                <h1>Black Baccara</h1>
+            </div>
+            <div className="DivBotones">
+                <button className="Boton">Remeras</button>
+                <button className="Boton">Buzos</button>
+                <button className="Boton">Camisas</button>
+            </div>
+            <div>
+                <CartWidget />
+            </div>   
         </nav>
     )
 }
