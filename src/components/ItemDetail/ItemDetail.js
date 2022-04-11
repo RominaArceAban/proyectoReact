@@ -2,7 +2,7 @@
 import './ItemDetail.css';
 
 
-const ItemDetail = ({ id, nombre, img, descripcion, stock, precio}) => {
+const ItemDetail = ({ nombre, img, descripcion, stock, precio}) => {
 
     return(
         <div className='cajaItem'>
