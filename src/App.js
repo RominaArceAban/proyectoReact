@@ -17,18 +17,16 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <div>
-          <Link to='/category'>Categoria</Link>
-          <Link to='/item'>Item</Link>
+          <Link to='/category' className='Boton'>Categoria</Link>
+          <Link to='/item' className='Boton'>Item</Link>
         </div>
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
-          <Route path='/category/:categoryId' element={<ItemListContainer />} />
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Proyecto React'} />} />
           <Route path='/item/:productId' element={<ItemDetailContainer />} />
-        </Routes>
+          <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
+        </Routes>     
       </BrowserRouter>
-
-        <ItemListContainer greeting={'Proyecto React'} />
-        <ItemDetailContainer />
         <Counter initial={0} stock={10} onAdd={handleOnAdd} />
     </div>
   );

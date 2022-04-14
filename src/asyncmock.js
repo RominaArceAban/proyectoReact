@@ -2,57 +2,83 @@
 const productos = [
     {
         id: "1",
-        nombre: "Remera Expert",
+        nombre: "Remera Flames",
         precio: 2299,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01040121_negro_1_p.jpg",
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01050147_negro_1_p_2.jpg",
         stock: 10,
         category: "Remera",
-        descripcion: "Descripcion de Remera Expert"
+        descripcion: "Descripcion de Remera Flames"
     },
     {
         id: "2",
-        nombre: "Remera Duchamp",
+        nombre: "Remera Mapa",
         precio: 2999,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01030140_negro_1_p.jpg",
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01050146_multicolor_1_p_1.jpg",
         stock: 10,
         category: "Remera",
-        descripcion: "Descripcion de Remera Duchamp"
+        descripcion: "Descripcion de Remera Mapa"
     },
     {
         id: "3",
-        nombre: "Remera Godess",
+        nombre: "Remera Infinity",
         precio: 2299,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01030139_negro_1_p.jpg",
-        stock: 10,
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01050117_negro_1_p_7.jpg",
         category: "Remera",
-        descripcion: "Descripcion de Remera Godess"
+        descripcion: "Descripcion de Remera Infinity"
     },
     {
         id: "4",
-        nombre: "Remera Magic",
+        nombre: "Buzo Open",
         precio: 1599,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01040103_blanco_1_p.jpg",
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01040508_negro_1_p_1.jpg",
         stock: 10,
         category: "Buzo",
-        descripcion: "Descripcion de Remera Magic"
+        descripcion: "Descripcion de Buzo Open"
     },
     {
         id: "5",
-        nombre: "Remera Summer",
+        nombre: "Buzo Marcus Winter",
         precio: 1699,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01040116_negro_1_p.jpg",
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01050507_grismelange_1_p_1.jpg",
         stock: 10,
         category: "Buzo",
-        descripcion: "Descripcion de Remera Summer"
+        descripcion: "Descripcion de Buzo Marcus Winter"
     },
     {
         id: "6",
-        nombre: "Remera Morocco",
+        nombre: "Buzo Chicago",
         precio: 1499,
-        img:"https://statics.glamit.com.ar/media/catalog/product/cache/54/base/300x480/9df78eab33525d08d6e5fb8d27136e95/c/o/complot_01040149_rojo_1_p.jpg",
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01040506_negro_1_p_6.jpg",
         stock: 10,
         category: "Buzo",
-        descripcion: "Descripcion de Remera Morocco"
+        descripcion: "Descripcion de Buzo Chhicago"
+    },
+    {
+        id: "7",
+        nombre: "Camisa Croacia",
+        precio: 1699,
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01053002_azul_1_p.jpg",
+        stock: 10,
+        category: "Camisa",
+        descripcion: "Descripcion de Camisa Croacia"
+    },
+    {
+        id: "8",
+        nombre: "Camisa Letonia",
+        precio: 1699,
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01053003_marron_1_p.jpg",
+        stock: 10,
+        category: "Camisa",
+        descripcion: "Descripcion de Camisa Letonia"
+    },
+    {
+        id: "9",
+        nombre: "Camisa Pijama Estocolmo",
+        precio: 1699,
+        img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01053004_negro_1_p_5.jpg",
+        stock: 10,
+        category: "Camisa",
+        descripcion: "Descripcion de Camisa Pijama Estocolmo"
     }
 ]
 
@@ -66,7 +92,7 @@ export const getCategories = () => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(categories)
-        }, 2000)
+        }, 500)
     })
 }
 
@@ -74,7 +100,7 @@ export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(categoryId ? productos.filter(prod => prod.category === categoryId) : productos)
-        }, 2000)
+        }, 500)
     })
 }
 
@@ -82,6 +108,6 @@ export const getProductsById = (id) => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(productos.find(prod => prod.id === id))
-        }, 2000)
+        }, 500)
     })
 }

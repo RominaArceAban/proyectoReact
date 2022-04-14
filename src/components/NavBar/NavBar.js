@@ -16,15 +16,12 @@ const NavBar = () => {
     return(
         <nav className="NavBar">
             <Link to='/'>
-                <h1>Black Baccara</h1>
+                <h1 className='Logo'>Black Baccara</h1>
             </Link>
             <div className="DivBotones">
                 { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`}
-                className={({ isActive }) => isActive ? 'Boton' : 'Boton'}
+                className={({ isActive }) => isActive ? 'Boton' : 'BotonDesactivado'}
             >{cat.descripcion}</NavLink>) }
-                <NavLink to='/' className={({ isActive }) => isActive ? 'Boton' : 'BotonDesactivado'}>Remeras</NavLink>
-                <NavLink to='/' className={({ isActive }) => isActive ? 'Boton' : 'BotonDesactivado'}>Buzos</NavLink>
-                <NavLink to='/' className={({ isActive }) => isActive ? 'Boton' : 'BotonDesactivado'}>Camisas</NavLink>
             </div>
             <div>
                 <CartWidget />

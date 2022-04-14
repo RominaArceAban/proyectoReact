@@ -21,6 +21,21 @@
     justify-content: space-around;
 }
 
+.Logo{
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    font-size: 1,5rem;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(15, 15, 15, 0.842);
+    color: pink;
+    width: max-content;
+    height: 40px;
+    
+}
+
 .Boton{
     margin-left: 20px;
     margin-right: 20px;
