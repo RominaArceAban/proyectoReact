@@ -2,7 +2,7 @@
 import './ItemDetail.css';
 
 
-const ItemDetail = ({ nombre, img, descripcion, stock, precio}) => {
+const ItemDetail = ({ nombre, img, descripcion, stock, precio, category}) => {
 
     return(
         <div className='cajaItem'>
@@ -10,6 +10,9 @@ const ItemDetail = ({ nombre, img, descripcion, stock, precio}) => {
             <picture>
                 <img src={img} alt={nombre}/>
             </picture>
+            <p>
+                Categoria: {category}
+            </p>
             <p>
                 Descripcion: {descripcion}
             </p>
