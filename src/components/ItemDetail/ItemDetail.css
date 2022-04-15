@@ -1,6 +1,6 @@
 .cajaItem{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -8,4 +8,5 @@
     font-weight: bold;
     border: solid green;
     padding: 20px;
+    margin: 20px;
 }
