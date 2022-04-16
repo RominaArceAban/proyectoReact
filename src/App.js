@@ -1,17 +1,11 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Counter from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 function App() {
 
-  const handleOnAdd = (quantity) => {
-    if (quantity > 0) {
-      console.log(`Se agregaron ${quantity} productos`)
-    }
-  }
   return (
     <div className="App">
       <BrowserRouter>
@@ -26,8 +20,7 @@ function App() {
           <Route path='/item/:productId' element={<ItemDetailContainer />} />
           <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
         </Routes>     
-      </BrowserRouter>
-        <Counter initial={0} stock={10} onAdd={handleOnAdd} />
+      </BrowserRouter>   
     </div>
   );
 }

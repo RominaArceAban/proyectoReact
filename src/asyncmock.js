@@ -83,9 +83,9 @@ const productos = [
 ]
 
 const categories = [
-    {id: "remera", descripcion: "remera"},
-    {id: "buzo", descripcion: "buzo"},
-    {id: "camisas", descripcion: "camisas"}
+    {id: "Remera", descripcion: "Remera"},
+    {id: "Buzo", descripcion: "Buzo"},
+    {id: "Camisa", descripcion: "Camisa"}
 ]
 
 export const getCategories = () => {

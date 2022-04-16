@@ -10,3 +10,9 @@
     padding: 20px;
     margin: 20px;
 }
+
+.texto{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}

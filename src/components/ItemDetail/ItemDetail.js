@@ -1,8 +1,15 @@
 
 import './ItemDetail.css';
+import Counter from '../ItemCount/ItemCount';
 
 
 const ItemDetail = ({ nombre, img, descripcion, stock, precio, category}) => {
+
+  const handleOnAdd = (quantity) => {
+    if (quantity > 0) {
+      console.log(`Se agregaron ${quantity} productos`)
+    }
+  }
 
     return(
         <div className='cajaItem'>
@@ -25,7 +32,7 @@ const ItemDetail = ({ nombre, img, descripcion, stock, precio, category}) => {
               <p>
                 Precio: {precio}
               </p>
-              <button>Agregar al Carrito</button>
+              <Counter initial={0} stock={10} onAdd={handleOnAdd} />
             </div>
         </div>
     )

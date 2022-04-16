@@ -3,7 +3,7 @@ import { useState} from 'react';
 
 const Counter = ({initial, stock, onAdd}) => {
 
-    const [count, setCount] = useState({title: 'Desafio', count: 0 })
+    const [count, setCount] = useState({title: 'Desafio', count: 1 })
 
     const decrement = () => {
         if (count.count > 0) {
@@ -12,7 +12,7 @@ const Counter = ({initial, stock, onAdd}) => {
     }
 
     const increment = () => {
-        if (count.count < 10) {
+        if (count.count < `${stock}`) {
           setCount({...count, count: count.count + 1})   
         } 
     }
