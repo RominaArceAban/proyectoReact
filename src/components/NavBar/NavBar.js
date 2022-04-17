@@ -18,9 +18,9 @@ const NavBar = () => {
             <Link to='/'>
                 <h1 className='Logo'>Black Baccara</h1>
             </Link>
-            <div className="DivBotones">
+            <div className="DivBotonesNavBar">
                 { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`}
-                className={({ isActive }) => isActive ? 'Boton' : 'BotonDesactivado'}
+                className={({ isActive }) => isActive ? 'BotonNavBar' : 'BotonDesactivado'}
             >{cat.descripcion}</NavLink>) }
             </div>
             <div>

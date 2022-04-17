@@ -23,6 +23,7 @@ const productos = [
         nombre: "Remera Infinity",
         precio: 2299,
         img:"https://www.complot.com.ar/media/catalog/product/cache/bec5eb20f6f60b3e85ccc7f50be47a59/c/o/complot_01050117_negro_1_p_7.jpg",
+        stock: 10,
         category: "Remera",
         descripcion: "Descripcion de Remera Infinity"
     },
