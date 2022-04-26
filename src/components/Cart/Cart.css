@@ -1,0 +1,12 @@
+
+.Sidebar{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: auto;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}

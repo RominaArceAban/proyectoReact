@@ -1,4 +1,13 @@
+.Carrito{
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
 .CartImg{ 
-    width: 50px;
-    height: 40px;
+    width: 35px;
+    height: 30px;
+    margin-right: 5px;
 }
