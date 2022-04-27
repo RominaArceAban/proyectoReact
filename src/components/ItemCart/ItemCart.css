@@ -1,0 +1,23 @@
+
+.carritoCompras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.carritoImg{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.carritoDescripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}

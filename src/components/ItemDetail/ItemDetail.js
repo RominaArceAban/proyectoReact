@@ -37,9 +37,9 @@ const ItemDetail = ({ id, nombre, img, descripcion, stock, precio, category}) =>
                 Stock: {stock}
               </p>
               <p>
-                Precio: {precio}
+                Precio: ${precio}
               </p>
-              { isInCart(id) ? <Link to='/cart' className='Boton'>Terminar mi compra</Link> : <Counter onAdd={handleOnAdd} stock={stock} initial={getQuantityProd(id)} />}
+              { isInCart(id) ? <Link to='/cart' className='BotonDetail'>Terminar mi compra</Link> : <Counter onAdd={handleOnAdd} stock={stock} initial={getQuantityProd(id)} />}
             </div>
         </div>
     )

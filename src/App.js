@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 
@@ -13,9 +13,6 @@ function App() {
       <CartContextProvider>
       <BrowserRouter>
         <NavBar />
-        <div>
-          <Link to='/item' className='Boton'></Link>
-        </div>
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Proyecto React'} />} />

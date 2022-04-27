@@ -26,11 +26,13 @@ const Cart = () => {
 
     return (
         <>
-        <h1>Tu carrito</h1>
-        <ul className='Sidebar'>
-            {cart.map(prod => <ItemCart key={prod.id} {...prod} />)}
-        </ul>
-        <div>Total: {total}</div>
+        <div className='Sidebar'>
+            <h1>Tu carrito</h1>
+            <div>
+                {cart.map(prod => <ItemCart key={prod.id} {...prod} />)}
+            </div>
+            <div>Total: ${total}</div>
+        </div>
         </>
     )
 }

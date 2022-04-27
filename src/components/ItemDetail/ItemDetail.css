@@ -11,8 +11,16 @@
     margin: 20px;
 }
 
-.texto{
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -o-pre-wrap;
+.BotonDetail{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    font-size: 1,5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: rgba(15, 15, 15, 0.842);
+    color: pink;
+    border-radius: 15px;
+    width: max-content;
+    height: 40px;
 }

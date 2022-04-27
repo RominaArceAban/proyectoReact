@@ -1,12 +1,17 @@
 
 .Sidebar{
     padding: 10px;
+    margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    width: auto;
+    width: 800px;
     border: solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    align-content: center;
+    position: relative;
+    width: 30%;
+    left: 35%; 
 }
