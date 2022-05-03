@@ -4,7 +4,7 @@ import CartContext from "../../context/CartContext"
 import { Link } from 'react-router-dom'
 import ItemCart from '../ItemCart/ItemCart'
 import { firestoreDb } from '../../services/firebase/index'
-import { addDoc, collection, doc, documentId, getDocs, query, where, writeBatch } from 'firebase/firestore'
+import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from 'firebase/firestore'
 
 
 
